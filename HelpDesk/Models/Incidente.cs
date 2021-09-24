@@ -8,6 +8,7 @@ namespace HelpDesk.Models
     public class Incidente
     {
         public int Id{ get; set; }
+        public int UsuarioId{ get; set; }
         public Usuario Usuario { get; set; }
         public string Problema { get; set; }
         public string Descricao { get; set; }

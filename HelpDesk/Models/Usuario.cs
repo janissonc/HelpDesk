@@ -8,7 +8,8 @@ namespace HelpDesk.Models
     public class Usuario
     {
         public int Id { get; set; }
-        public Pessoa Pessoa { get; set; }
+        public int PessoaId { get; set; }
+      
         public string DeletarTarefa { get; set; } // Response deve ser Y ou N
         public string CriarTarefa { get; set; } // Response deve ser Y ou N
         public string EditarTarefa { get; set; } // Response deve ser Y ou N
@@ -25,5 +26,7 @@ namespace HelpDesk.Models
         public string CancelarIncidente { get; set; } // Response deve ser Y ou N
         public string login { get; set;}
         public string senha { get; set; }
+
+        public Pessoa Pessoa { get; set; }
     }
 }
